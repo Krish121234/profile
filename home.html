@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+        
+        /* Corrected selectors */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", serif;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            body {
+                transform: scale(1.25);
+            }
+        }
+            
+        .main {
+            display: flex;
+            flex-direction: row; /* Ensures vertical stacking */
+            align-items: center;    /* Centers content horizontally */
+            text-align: center;     /* Centers text inside */
+            max-width: 90%;
+            gap: 20px;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-out forwards
+        }
+
+        @keyframes fadeIn {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+            
+        }
+        .main img {
+            width: 100%; /* Ensures image scales responsively */
+            height: auto;
+            max-width: 400px;
+            border-radius: 10px;
+            height: auto;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            text-align: center;
+        }
+        .main h1 {
+            font-size: 25px;
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="img/my_img.jpg" alt="My Image">
+        <div class="content">
+            <h1>Krish Bhoite</h1>
+            <div class="links">
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="">Resume</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
