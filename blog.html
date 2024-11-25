@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c2c2c; /* Soft grey */
+            color: #f5f5f5; /* White text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffffff; /* Slightly brighter white for contrast */
+        }
+
+        .blog-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .blog-card {
+            background-color: #3a3a3a; /* Slightly lighter grey for blocks */
+            border-radius: 8px;
+            padding: 15px 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .blog-card a {
+            text-decoration: none;
+            color: #f5f5f5;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .blog-card:hover {
+            transform: scale(1.05);
+            background-color: #505050; /* Slightly brighter on hover */
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #cccccc; /* Muted text for footer */
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Blog</h1>
+    <div class="blog-links">
+        <div class="blog-card">
+            <a href="blog1.txt">Blog 1: My First Post</a>
+        </div>
+        <div class="blog-card">
+            <a href="blog2.txt">Blog 2: Exploring Coding</a>
+        </div>
+        <div class="blog-card">
+            <a href="blog3.txt">Blog 3: Life Updates</a>
+        </div>
+        <div class="blog-card">
+            <a href="blog4.txt">Blog 4: Study Tips</a>
+        </div>
+    </div>
+    <footer>
+        Made with ❤️ by <a href="about.html">Krish Bhoite</a>
+    </footer>
+</body>
+</html>
